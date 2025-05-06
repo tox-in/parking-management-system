@@ -7,7 +7,7 @@ import serial
 import serial.tools.list_ports
 import csv
 from collections import Counter
-
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Load YOLOv8 model
 model = YOLO('/weights/best.pt')
